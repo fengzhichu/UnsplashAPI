@@ -1,0 +1,45 @@
+//
+//  UnsplashAPI-Prefix.pch
+//  UnsplashAPI
+//
+//  Created by Jouen on 16/9/5.
+//  Copyright © 2016年 Hummer. All rights reserved.
+//
+
+#ifndef UnsplashAPI_Prefix_pch
+#define UnsplashAPI_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import "UnsplashModels.h"
+#import "NSURL+Extension.h"
+#import "YYModel.h"
+
+#pragma mark -  YYModel
+#define ModelSynthCoderAndHash \
+- (void)encodeWithCoder:(NSCoder *)aCoder { [self yy_modelEncodeWithCoder:aCoder]; } \
+- (instancetype)initWithCoder:(NSCoder *)aDecoder { return [self yy_modelInitWithCoder:aDecoder]; } \
+- (id)copyWithZone:(NSZone *)zone { return [self yy_modelCopy]; } \
+- (NSUInteger)hash { return [self yy_modelHash]; } \
+- (BOOL)isEqual:(id)object { return [self yy_modelIsEqual:object]; } \
+- (NSString *)description { return [self yy_modelDescription]; }
+
+#pragma mark -  log
+#ifdef DEBUG
+#define DBLog(_S_, ...) NSLog(@"\n\n*******************************************\n*\tMETHOD_NAME: \t%s\n*\tLINE_NUMBER: \t%d\n*\tIN_THE_FILE: \t%s\n*******************************************\n%@", __FUNCTION__, __LINE__, __FILE__, [NSString stringWithFormat:(_S_), ##__VA_ARGS__])
+#else
+#define DBLog(_S_, ...)
+#endif
+
+#ifdef DEBUG
+#define SMLog(_S_, ...) printf("PICASO: %s\n", [[NSString stringWithFormat:(_S_), ##__VA_ARGS__] cStringUsingEncoding:NSUTF8StringEncoding])
+#else
+#define SMLog(_S_, ...)
+#endif
+
+#pragma mark -  unsplash
+#define UNSPLASH_URL @"https://unsplash.com/"
+#define UNSPLASH_HOST @"unsplash.com"
+#pragma mark -  develop
+#define UNSPLASH_API_BASE_URL @"https://api.unsplash.com"
+
+#endif /* UnsplashAPI_Prefix_pch */

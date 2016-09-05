@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AFA0BAD1D7D98DC00DD1598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BAC1D7D98DC00DD1598 /* main.m */; };
+		4AFA0BB01D7D98DC00DD1598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BAF1D7D98DC00DD1598 /* AppDelegate.m */; };
+		4AFA0BB31D7D98DC00DD1598 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BB21D7D98DC00DD1598 /* ViewController.m */; };
+		4AFA0BB61D7D98DC00DD1598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA0BB41D7D98DC00DD1598 /* Main.storyboard */; };
+		4AFA0BB81D7D98DC00DD1598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA0BB71D7D98DC00DD1598 /* Assets.xcassets */; };
+		4AFA0BBB1D7D98DC00DD1598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA0BB91D7D98DC00DD1598 /* LaunchScreen.storyboard */; };
+		4AFA0BEE1D7D994000DD1598 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BC31D7D994000DD1598 /* CollectionsViewController.m */; };
+		4AFA0BEF1D7D994000DD1598 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BC51D7D994000DD1598 /* CustomTableViewCell.m */; };
+		4AFA0BF01D7D994000DD1598 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BC71D7D994000DD1598 /* PhotosViewController.m */; };
+		4AFA0BF11D7D994000DD1598 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BC91D7D994000DD1598 /* ProfileViewController.m */; };
+		4AFA0BF21D7D994000DD1598 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BCD1D7D994000DD1598 /* NSURL+Extension.m */; };
+		4AFA0BF41D7D994000DD1598 /* UnsplashApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BD21D7D994000DD1598 /* UnsplashApiManager.m */; };
+		4AFA0BF51D7D994000DD1598 /* UnsplashAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BD41D7D994000DD1598 /* UnsplashAuthManager.m */; };
+		4AFA0BF61D7D994000DD1598 /* UnsplashClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BD61D7D994000DD1598 /* UnsplashClient.m */; };
+		4AFA0BF71D7D994000DD1598 /* UnsplashHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BD81D7D994000DD1598 /* UnsplashHttpClient.m */; };
+		4AFA0BF81D7D994000DD1598 /* UnsplashCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BDB1D7D994000DD1598 /* UnsplashCollection.m */; };
+		4AFA0BF91D7D994000DD1598 /* UnsplashPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BDE1D7D994000DD1598 /* UnsplashPhoto.m */; };
+		4AFA0BFA1D7D994000DD1598 /* UnsplashPhotoExif.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BE01D7D994000DD1598 /* UnsplashPhotoExif.m */; };
+		4AFA0BFB1D7D994000DD1598 /* UnsplashPhotoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BE21D7D994000DD1598 /* UnsplashPhotoLocation.m */; };
+		4AFA0BFC1D7D994000DD1598 /* UnsplashPhotoStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BE41D7D994000DD1598 /* UnsplashPhotoStats.m */; };
+		4AFA0BFD1D7D994000DD1598 /* UnsplashStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BE61D7D994000DD1598 /* UnsplashStats.m */; };
+		4AFA0BFE1D7D994000DD1598 /* UnsplashUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BE81D7D994000DD1598 /* UnsplashUser.m */; };
+		4AFA0BFF1D7D994000DD1598 /* UnsplashUserBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BEA1D7D994000DD1598 /* UnsplashUserBadge.m */; };
+		4AFA0C001D7D994000DD1598 /* UserCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA0BEC1D7D994000DD1598 /* UserCategory.m */; };
+		D6E3DA2A752C4900473E2A08 /* libPods-UnsplashAPIDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA065D79B67B7D67FBD8A2A /* libPods-UnsplashAPIDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AA065D79B67B7D67FBD8A2A /* libPods-UnsplashAPIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnsplashAPIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFA0BA81D7D98DC00DD1598 /* UnsplashAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashAPIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFA0BAC1D7D98DC00DD1598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AFA0BAE1D7D98DC00DD1598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AFA0BAF1D7D98DC00DD1598 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AFA0BB11D7D98DC00DD1598 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AFA0BB21D7D98DC00DD1598 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AFA0BB51D7D98DC00DD1598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AFA0BB71D7D98DC00DD1598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AFA0BBA1D7D98DC00DD1598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AFA0BBC1D7D98DC00DD1598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AFA0BC21D7D994000DD1598 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
+		4AFA0BC31D7D994000DD1598 /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
+		4AFA0BC41D7D994000DD1598 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		4AFA0BC51D7D994000DD1598 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		4AFA0BC61D7D994000DD1598 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		4AFA0BC71D7D994000DD1598 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		4AFA0BC81D7D994000DD1598 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		4AFA0BC91D7D994000DD1598 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		4AFA0BCC1D7D994000DD1598 /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extension.h"; sourceTree = "<group>"; };
+		4AFA0BCD1D7D994000DD1598 /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extension.m"; sourceTree = "<group>"; };
+		4AFA0BCF1D7D994000DD1598 /* UnsplashAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnsplashAPI-Prefix.pch"; sourceTree = "<group>"; };
+		4AFA0BD01D7D994000DD1598 /* UnsplashAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashAPI.h; sourceTree = "<group>"; };
+		4AFA0BD11D7D994000DD1598 /* UnsplashApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashApiManager.h; sourceTree = "<group>"; };
+		4AFA0BD21D7D994000DD1598 /* UnsplashApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashApiManager.m; sourceTree = "<group>"; };
+		4AFA0BD31D7D994000DD1598 /* UnsplashAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashAuthManager.h; sourceTree = "<group>"; };
+		4AFA0BD41D7D994000DD1598 /* UnsplashAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashAuthManager.m; sourceTree = "<group>"; };
+		4AFA0BD51D7D994000DD1598 /* UnsplashClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashClient.h; sourceTree = "<group>"; };
+		4AFA0BD61D7D994000DD1598 /* UnsplashClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashClient.m; sourceTree = "<group>"; };
+		4AFA0BD71D7D994000DD1598 /* UnsplashHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashHttpClient.h; sourceTree = "<group>"; };
+		4AFA0BD81D7D994000DD1598 /* UnsplashHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashHttpClient.m; sourceTree = "<group>"; };
+		4AFA0BDA1D7D994000DD1598 /* UnsplashCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashCollection.h; sourceTree = "<group>"; };
+		4AFA0BDB1D7D994000DD1598 /* UnsplashCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashCollection.m; sourceTree = "<group>"; };
+		4AFA0BDC1D7D994000DD1598 /* UnsplashModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashModels.h; sourceTree = "<group>"; };
+		4AFA0BDD1D7D994000DD1598 /* UnsplashPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashPhoto.h; sourceTree = "<group>"; };
+		4AFA0BDE1D7D994000DD1598 /* UnsplashPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhoto.m; sourceTree = "<group>"; };
+		4AFA0BDF1D7D994000DD1598 /* UnsplashPhotoExif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashPhotoExif.h; sourceTree = "<group>"; };
+		4AFA0BE01D7D994000DD1598 /* UnsplashPhotoExif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhotoExif.m; sourceTree = "<group>"; };
+		4AFA0BE11D7D994000DD1598 /* UnsplashPhotoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashPhotoLocation.h; sourceTree = "<group>"; };
+		4AFA0BE21D7D994000DD1598 /* UnsplashPhotoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhotoLocation.m; sourceTree = "<group>"; };
+		4AFA0BE31D7D994000DD1598 /* UnsplashPhotoStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashPhotoStats.h; sourceTree = "<group>"; };
+		4AFA0BE41D7D994000DD1598 /* UnsplashPhotoStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashPhotoStats.m; sourceTree = "<group>"; };
+		4AFA0BE51D7D994000DD1598 /* UnsplashStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashStats.h; sourceTree = "<group>"; };
+		4AFA0BE61D7D994000DD1598 /* UnsplashStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashStats.m; sourceTree = "<group>"; };
+		4AFA0BE71D7D994000DD1598 /* UnsplashUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashUser.h; sourceTree = "<group>"; };
+		4AFA0BE81D7D994000DD1598 /* UnsplashUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashUser.m; sourceTree = "<group>"; };
+		4AFA0BE91D7D994000DD1598 /* UnsplashUserBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsplashUserBadge.h; sourceTree = "<group>"; };
+		4AFA0BEA1D7D994000DD1598 /* UnsplashUserBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsplashUserBadge.m; sourceTree = "<group>"; };
+		4AFA0BEB1D7D994000DD1598 /* UserCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCategory.h; sourceTree = "<group>"; };
+		4AFA0BEC1D7D994000DD1598 /* UserCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCategory.m; sourceTree = "<group>"; };
+		4AFA0BED1D7D994000DD1598 /* UnsplashAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnsplashAPI-Prefix.pch"; sourceTree = "<group>"; };
+		8F1CC091966EC096BA8CCF5E /* Pods-UnsplashAPIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashAPIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnsplashAPIDemo/Pods-UnsplashAPIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE83AAAA6D918CA4938613CC /* Pods-UnsplashAPIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashAPIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnsplashAPIDemo/Pods-UnsplashAPIDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AFA0BA51D7D98DC00DD1598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E3DA2A752C4900473E2A08 /* libPods-UnsplashAPIDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A25292A7497FDF57125A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA065D79B67B7D67FBD8A2A /* libPods-UnsplashAPIDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40F6C9C292BC437B9619ED3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F1CC091966EC096BA8CCF5E /* Pods-UnsplashAPIDemo.debug.xcconfig */,
+				CE83AAAA6D918CA4938613CC /* Pods-UnsplashAPIDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4AFA0B9F1D7D98DC00DD1598 = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BAA1D7D98DC00DD1598 /* UnsplashAPIDemo */,
+				4AFA0BA91D7D98DC00DD1598 /* Products */,
+				40F6C9C292BC437B9619ED3C /* Pods */,
+				03A25292A7497FDF57125A00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AFA0BA91D7D98DC00DD1598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BA81D7D98DC00DD1598 /* UnsplashAPIDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AFA0BAA1D7D98DC00DD1598 /* UnsplashAPIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BCA1D7D994000DD1598 /* UnsplashAPI */,
+				4AFA0BC41D7D994000DD1598 /* CustomTableViewCell.h */,
+				4AFA0BC51D7D994000DD1598 /* CustomTableViewCell.m */,
+				4AFA0BC21D7D994000DD1598 /* CollectionsViewController.h */,
+				4AFA0BC31D7D994000DD1598 /* CollectionsViewController.m */,
+				4AFA0BC61D7D994000DD1598 /* PhotosViewController.h */,
+				4AFA0BC71D7D994000DD1598 /* PhotosViewController.m */,
+				4AFA0BC81D7D994000DD1598 /* ProfileViewController.h */,
+				4AFA0BC91D7D994000DD1598 /* ProfileViewController.m */,
+				4AFA0BB11D7D98DC00DD1598 /* ViewController.h */,
+				4AFA0BB21D7D98DC00DD1598 /* ViewController.m */,
+				4AFA0BB41D7D98DC00DD1598 /* Main.storyboard */,
+				4AFA0BAE1D7D98DC00DD1598 /* AppDelegate.h */,
+				4AFA0BAF1D7D98DC00DD1598 /* AppDelegate.m */,
+				4AFA0BB71D7D98DC00DD1598 /* Assets.xcassets */,
+				4AFA0BB91D7D98DC00DD1598 /* LaunchScreen.storyboard */,
+				4AFA0BBC1D7D98DC00DD1598 /* Info.plist */,
+				4AFA0BED1D7D994000DD1598 /* UnsplashAPI-Prefix.pch */,
+				4AFA0BAB1D7D98DC00DD1598 /* Supporting Files */,
+			);
+			path = UnsplashAPIDemo;
+			sourceTree = "<group>";
+		};
+		4AFA0BAB1D7D98DC00DD1598 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BAC1D7D98DC00DD1598 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AFA0BCA1D7D994000DD1598 /* UnsplashAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BD91D7D994000DD1598 /* UnsplashModels */,
+				4AFA0BCB1D7D994000DD1598 /* Categories */,
+				4AFA0BCF1D7D994000DD1598 /* UnsplashAPI-Prefix.pch */,
+				4AFA0BD01D7D994000DD1598 /* UnsplashAPI.h */,
+				4AFA0BD11D7D994000DD1598 /* UnsplashApiManager.h */,
+				4AFA0BD21D7D994000DD1598 /* UnsplashApiManager.m */,
+				4AFA0BD31D7D994000DD1598 /* UnsplashAuthManager.h */,
+				4AFA0BD41D7D994000DD1598 /* UnsplashAuthManager.m */,
+				4AFA0BD51D7D994000DD1598 /* UnsplashClient.h */,
+				4AFA0BD61D7D994000DD1598 /* UnsplashClient.m */,
+				4AFA0BD71D7D994000DD1598 /* UnsplashHttpClient.h */,
+				4AFA0BD81D7D994000DD1598 /* UnsplashHttpClient.m */,
+			);
+			path = UnsplashAPI;
+			sourceTree = "<group>";
+		};
+		4AFA0BCB1D7D994000DD1598 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BCC1D7D994000DD1598 /* NSURL+Extension.h */,
+				4AFA0BCD1D7D994000DD1598 /* NSURL+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4AFA0BD91D7D994000DD1598 /* UnsplashModels */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA0BDA1D7D994000DD1598 /* UnsplashCollection.h */,
+				4AFA0BDB1D7D994000DD1598 /* UnsplashCollection.m */,
+				4AFA0BDC1D7D994000DD1598 /* UnsplashModels.h */,
+				4AFA0BDD1D7D994000DD1598 /* UnsplashPhoto.h */,
+				4AFA0BDE1D7D994000DD1598 /* UnsplashPhoto.m */,
+				4AFA0BDF1D7D994000DD1598 /* UnsplashPhotoExif.h */,
+				4AFA0BE01D7D994000DD1598 /* UnsplashPhotoExif.m */,
+				4AFA0BE11D7D994000DD1598 /* UnsplashPhotoLocation.h */,
+				4AFA0BE21D7D994000DD1598 /* UnsplashPhotoLocation.m */,
+				4AFA0BE31D7D994000DD1598 /* UnsplashPhotoStats.h */,
+				4AFA0BE41D7D994000DD1598 /* UnsplashPhotoStats.m */,
+				4AFA0BE51D7D994000DD1598 /* UnsplashStats.h */,
+				4AFA0BE61D7D994000DD1598 /* UnsplashStats.m */,
+				4AFA0BE71D7D994000DD1598 /* UnsplashUser.h */,
+				4AFA0BE81D7D994000DD1598 /* UnsplashUser.m */,
+				4AFA0BE91D7D994000DD1598 /* UnsplashUserBadge.h */,
+				4AFA0BEA1D7D994000DD1598 /* UnsplashUserBadge.m */,
+				4AFA0BEB1D7D994000DD1598 /* UserCategory.h */,
+				4AFA0BEC1D7D994000DD1598 /* UserCategory.m */,
+			);
+			path = UnsplashModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AFA0BA71D7D98DC00DD1598 /* UnsplashAPIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AFA0BBF1D7D98DC00DD1598 /* Build configuration list for PBXNativeTarget "UnsplashAPIDemo" */;
+			buildPhases = (
+				6A936BA047935E8AEDCDD4CB /* [CP] Check Pods Manifest.lock */,
+				4AFA0BA41D7D98DC00DD1598 /* Sources */,
+				4AFA0BA51D7D98DC00DD1598 /* Frameworks */,
+				4AFA0BA61D7D98DC00DD1598 /* Resources */,
+				4C9E4DA98A6A0EFA212C28E4 /* [CP] Embed Pods Frameworks */,
+				42A3C8CA42090FE5EB37CDA5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnsplashAPIDemo;
+			productName = UnsplashAPIDemo;
+			productReference = 4AFA0BA81D7D98DC00DD1598 /* UnsplashAPIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AFA0BA01D7D98DC00DD1598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Hummer;
+				TargetAttributes = {
+					4AFA0BA71D7D98DC00DD1598 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8K69JRPXYS;
+					};
+				};
+			};
+			buildConfigurationList = 4AFA0BA31D7D98DC00DD1598 /* Build configuration list for PBXProject "UnsplashAPIDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AFA0B9F1D7D98DC00DD1598;
+			productRefGroup = 4AFA0BA91D7D98DC00DD1598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AFA0BA71D7D98DC00DD1598 /* UnsplashAPIDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AFA0BA61D7D98DC00DD1598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA0BBB1D7D98DC00DD1598 /* LaunchScreen.storyboard in Resources */,
+				4AFA0BB81D7D98DC00DD1598 /* Assets.xcassets in Resources */,
+				4AFA0BB61D7D98DC00DD1598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42A3C8CA42090FE5EB37CDA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnsplashAPIDemo/Pods-UnsplashAPIDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C9E4DA98A6A0EFA212C28E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnsplashAPIDemo/Pods-UnsplashAPIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A936BA047935E8AEDCDD4CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AFA0BA41D7D98DC00DD1598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA0BF91D7D994000DD1598 /* UnsplashPhoto.m in Sources */,
+				4AFA0BF21D7D994000DD1598 /* NSURL+Extension.m in Sources */,
+				4AFA0BEE1D7D994000DD1598 /* CollectionsViewController.m in Sources */,
+				4AFA0BFB1D7D994000DD1598 /* UnsplashPhotoLocation.m in Sources */,
+				4AFA0BF41D7D994000DD1598 /* UnsplashApiManager.m in Sources */,
+				4AFA0BF01D7D994000DD1598 /* PhotosViewController.m in Sources */,
+				4AFA0BFF1D7D994000DD1598 /* UnsplashUserBadge.m in Sources */,
+				4AFA0BF71D7D994000DD1598 /* UnsplashHttpClient.m in Sources */,
+				4AFA0BFD1D7D994000DD1598 /* UnsplashStats.m in Sources */,
+				4AFA0BB31D7D98DC00DD1598 /* ViewController.m in Sources */,
+				4AFA0BF61D7D994000DD1598 /* UnsplashClient.m in Sources */,
+				4AFA0BB01D7D98DC00DD1598 /* AppDelegate.m in Sources */,
+				4AFA0BF11D7D994000DD1598 /* ProfileViewController.m in Sources */,
+				4AFA0BF51D7D994000DD1598 /* UnsplashAuthManager.m in Sources */,
+				4AFA0C001D7D994000DD1598 /* UserCategory.m in Sources */,
+				4AFA0BFC1D7D994000DD1598 /* UnsplashPhotoStats.m in Sources */,
+				4AFA0BFE1D7D994000DD1598 /* UnsplashUser.m in Sources */,
+				4AFA0BEF1D7D994000DD1598 /* CustomTableViewCell.m in Sources */,
+				4AFA0BAD1D7D98DC00DD1598 /* main.m in Sources */,
+				4AFA0BFA1D7D994000DD1598 /* UnsplashPhotoExif.m in Sources */,
+				4AFA0BF81D7D994000DD1598 /* UnsplashCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AFA0BB41D7D98DC00DD1598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AFA0BB51D7D98DC00DD1598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AFA0BB91D7D98DC00DD1598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AFA0BBA1D7D98DC00DD1598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AFA0BBD1D7D98DC00DD1598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AFA0BBE1D7D98DC00DD1598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AFA0BC01D7D98DC00DD1598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1CC091966EC096BA8CCF5E /* Pods-UnsplashAPIDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UnsplashAPIDemo/UnsplashAPI-Prefix.pch";
+				INFOPLIST_FILE = UnsplashAPIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhichu.UnsplashAPIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AFA0BC11D7D98DC00DD1598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE83AAAA6D918CA4938613CC /* Pods-UnsplashAPIDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UnsplashAPIDemo/UnsplashAPI-Prefix.pch";
+				INFOPLIST_FILE = UnsplashAPIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhichu.UnsplashAPIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AFA0BA31D7D98DC00DD1598 /* Build configuration list for PBXProject "UnsplashAPIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA0BBD1D7D98DC00DD1598 /* Debug */,
+				4AFA0BBE1D7D98DC00DD1598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AFA0BBF1D7D98DC00DD1598 /* Build configuration list for PBXNativeTarget "UnsplashAPIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA0BC01D7D98DC00DD1598 /* Debug */,
+				4AFA0BC11D7D98DC00DD1598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AFA0BA01D7D98DC00DD1598 /* Project object */;
+}
