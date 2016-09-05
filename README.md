@@ -24,6 +24,9 @@ pod 'YYModel'
 
 ## 使用
 头文件中已经对每个方法的参加做了详细注释，如果依然不明白，可以去查看[`Unsplash API`](https://unsplash.com/documentation)文档。
+
+在使用之前，需要先在`UnsplashAuthManager.m`中替换`client_id`和`client_secret`，否则会报错。
+
 1. 使用此方法获得授权：
 
 ```objective-c
