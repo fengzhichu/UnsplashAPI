@@ -1,5 +1,6 @@
 # UnsplashAPI
 使用`Objective-C`写的`unsplash.com`的非官方`API`。
+
 1. 在线授权登陆，并把`Access token`存储到`Key chain`中，再次登陆直接从`Key chain`中提取`Access token`;
 2. 读取当前登陆用户的个人信息；
 3. 加载当前用户上传的图片、点赞的图片已经创建的收藏夹；
