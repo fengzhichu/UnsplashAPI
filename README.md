@@ -9,10 +9,10 @@
 7. ......
 
 ## 预览
-![](UnsplashAPIDemo/Preview/WechatIMG1.jpeg)
-![](UnsplashAPIDemo/Preview/WechatIMG2.jpeg)
-![](UnsplashAPIDemo/Preview/WechatIMG3.jpeg)
-![](UnsplashAPIDemo/Preview/WechatIMG4.jpeg)
+![](UnsplashAPIDemo/Preview/Preview1.jpeg)
+![](UnsplashAPIDemo/Preview/Preview2.jpeg)
+![](UnsplashAPIDemo/Preview/Preview3.jpeg)
+![](UnsplashAPIDemo/Preview/Preview4.jpeg)
 
 ## 依赖
 使用此库需要以下依赖：
