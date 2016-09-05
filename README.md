@@ -23,7 +23,7 @@ pod 'YYModel'
 ```
 
 ## 使用
-头文件中已经对每个方法的参加做了详细注释，如果依然不明白，可以去[`这里`](https://unsplash.com/documentation)查看`Unsplash API`。
+头文件中已经对每个方法的参加做了详细注释，如果依然不明白，可以去查看[`Unsplash API`](https://unsplash.com/documentation)文档。
 1. 使用此方法获得授权：
 
 ```objective-c
