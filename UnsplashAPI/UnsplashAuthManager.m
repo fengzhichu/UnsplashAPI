@@ -20,8 +20,8 @@
 #import "UnsplashHttpClient.h"
 
 NSString * const kUnsplashHost = @"unsplash.com";
-NSString * const kClientId = @"f8baf503643501d7c736061bbfbd128789549220b67c9dbf1b9c7f188edefef4";
-NSString * const kClientSecret = @"f217ccb7bf5d115df28338e8bbd4f65be8cb50026891e11c6ca69cd42f95ca97";
+NSString * const kClientId = @"client_id"; // replace it with yours.
+NSString * const kClientSecret = @"client_secret"; // replace it with yours.
 
 @interface UnsplashAuthManager ()
 @property (nonatomic, copy) NSString *clientId;
@@ -42,6 +42,8 @@ NSString * const kClientSecret = @"f217ccb7bf5d115df28338e8bbd4f65be8cb50026891e
 }
 
 - (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret permissionScopes:(NSArray *)scopes {
+    NSAssert(![clientId isEqualToString:@"client_id"], @"You need replace client_id with yours.");
+    NSAssert(![clientId isEqualToString:@"client_secret"], @"You need replace client_secret with yours.");
     self = [super init];
     if (self) {
         _clientId = clientId;

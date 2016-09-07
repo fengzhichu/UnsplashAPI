@@ -42,8 +42,8 @@ NSString * const kClientSecret = @"client_secret"; // replace it with yours.
 }
 
 - (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret permissionScopes:(NSArray *)scopes {
-    NSAssert([clientId isEqualToString:@"client_id"], @"You need replace client_id with yours.");
-    NSAssert([clientId isEqualToString:@"client_secret"], @"You need replace client_secret with yours.");
+    NSAssert(![clientId isEqualToString:@"client_id"], @"You need replace client_id with yours.");
+    NSAssert(![clientId isEqualToString:@"client_secret"], @"You need replace client_secret with yours.");
     self = [super init];
     if (self) {
         _clientId = clientId;
